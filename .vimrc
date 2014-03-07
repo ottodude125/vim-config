@@ -18,10 +18,13 @@ set hidden		" hides buffers instead of closing them - allows you to open new fil
 set nowrap		" dont wrap lines"
 
 " Persistent undo
-set undofile 				" Save undo's after file closes
-set undodir=/Users/katonj/.vim/undo	" where to save history"
-set undolevels=10000			" how many undos"
-set undoreload=10000			" number of lines to save for undo"
+try
+	set undofile 				" Save undo's after file closes
+	set undodir=~/.vim/undo	" where to save history"
+	set undolevels=10000			" how many undos"
+	set undoreload=10000			" number of lines to save for undo"
+catch
+endtry
 
 colorscheme twilight256
 filetype plugin indent on
