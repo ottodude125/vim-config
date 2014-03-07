@@ -27,7 +27,7 @@ colorscheme twilight256
 filetype plugin indent on
 
 " Load NERDTree automatically when vim starts up
-autocmd vimenter * NERDTree				" if file specified"
+"autocmd vimenter * NERDTree				" if file specified"
 autocmd vimenter * if !argc() | NERDTree | endif	" if no file specified"
 
 " map Ctrl+n to open and close and close nerd tree
